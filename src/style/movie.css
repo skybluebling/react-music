@@ -1,0 +1,25 @@
+.movie {
+	min-height: 1.2rem;
+	background-color: #2196f3;
+	line-height: 1.2rem
+}
+.movie h2 {
+	padding: 0 0.2rem;
+	color: rgba(255, 255, 255, .87);
+	font-size: 0.38rem;
+	text-align: center;
+	font-weight: normal;
+}
+.movie .movieCenter div.navBar {
+	height: 0.9rem;
+	background-color: #2196f3;
+	line-height: 0.9rem;
+	border-top: 0.02rem solid #fff;
+}
+.movie .movieCenter div.navBar a {
+	padding: 0 0.2rem;
+	width: 33.333%;
+	float: left;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.54)
+}

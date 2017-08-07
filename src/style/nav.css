@@ -1,0 +1,20 @@
+/*
+* @Author: Administrator
+* @Date:   2017-08-04 17:58:02
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-05 20:46:54
+*/
+.nav {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	background-color: #2196f3;
+	text-align: center;
+}
+.nav a {
+	width: 25%;
+	float: left;
+	color: #fff;
+}

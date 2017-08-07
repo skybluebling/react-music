@@ -1,0 +1,61 @@
+.movie {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.movie h2 {
+	line-height: 1.2rem;
+	padding: 0 0.2rem;
+	color: rgba(255, 255, 255, .87);
+	font-size: 0.38rem;
+	text-align: center;
+	font-weight: normal;
+	background-color: #2196f3;
+}
+.movie .movieCenter {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.movie .movieCenter ul.navBar {
+	height: 0.9rem;
+	background-color: #2196f3;
+	line-height: 0.9rem;
+	border-top: 0.02rem solid #fff;
+}
+.movie .movieCenter ul.navBar li {
+	padding: 0 0.2rem;
+	width: 33.333%;
+	float: left;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.54)
+}
+.movie .movieCenter .movieContent {
+	flex: 1;
+	overflow: auto;
+	padding-bottom: 0.7rem;
+}
+.movie .movieCenter .movieContent ul li {
+	height: 1.6rem;
+	padding-left: 0.4rem;
+	position: relative;
+	display: flex;
+}
+.movie .movieCenter .movieContent ul li img {
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 0.4rem;
+	margin: 0.4rem 0.4rem 0.4rem 0;
+}
+.movie .movieCenter .movieContent ul li div {
+	flex: 1;
+	padding-top: 0.3rem;
+	border-bottom: 0.02rem solid rgba(0, 0, 0, .12);
+}
+.movie .movieCenter .movieContent ul li span {
+	font-size: 0.3rem;
+	color: #000;
+}
+.movie .movieCenter .movieContent ul li p span{
+	color: rgba(0,0,0,.54);
+}

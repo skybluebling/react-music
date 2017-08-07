@@ -1,0 +1,105 @@
+.App {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+ul,li {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td,ol,ul,li,img,i,a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+.clear {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+.clearFix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearFix {
+  *display: inline-block;
+}
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a :hover {
+  color:#e73e33;
+}
+
+label,input,button,select,textarea {
+  vertical-align: middle;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  outline: none;
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+}
+html{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  color: #777;
+}
+a:hover{
+  color: #fb2626;
+}
+a:active {
+  color: #777;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body {
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-overflow-scrolling: touch;
+  font-family: -apple-system-font, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 0.26rem;
+  color: #999999;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+code {font-family: -apple-system-font, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;}
+button, input,textarea{
+  outline: none;
+}
+.linkColor {
+  color: #ff004d;
+  cursor: pointer;
+  transition: color .3s ease;
+}
