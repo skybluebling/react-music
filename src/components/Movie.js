@@ -6,28 +6,37 @@ import {getTopMovie} from '../action/movieAction.js'
 import {withRouter} from 'react-router-dom'
 
 class Movie extends Component {
+	state = {
+		busy: false
+	}
 	getTop250 = () => {
 		this.props.dispatch(getTopMovie())
 	}
 	scroll = (e) => {
-		let ulLength = document.querySelector(".movieContent>ul").offsetHeight - document.querySelector(".movieContent").offsetHeight
-		console.log(ulLength)
+		let innerHeight = window.innerHeight - document.querySelector(".movie").offsetHeight - document.querySelector('.nav').offsetHeight;
+		let ulHeight = document.querySelector(".navBar").offsetHeight;
 		console.log(e.target.scrollTop)
-		if (e.target.scrollTop == ulLength) {
-			this.loadMore()
+		if (e.target.scrollTop - ulHeight >= innerHeight ) {
+			this.loadMore();
 		}
 	}
 	loadMore = () => {
+		if (this.state.busy) {
+			return
+		}
 		let start = this.props.movie.length
 		console.log(start)
-		this.props.dispatch(getTopMovie({start: start}))
+		this.props.dispatch(getTopMovie({"start": start, "count": 10}))
+	}
+	componentDidMount () {
+		this.loadMore();
 	}
 	render() {
-		const {movie,currentMovie} = this.props;
+		const {movie} = this.props;
 		console.log(this.props)
 		return (
 			<div className="movie">
-				<h2>movie</h2>
+				<h2 className="title">movie</h2>
 				<div className="movieCenter" onScroll={this.scroll}>
 					<ul className="navBar">
 						<li onClick={this.getTop250}>TOP250</li>
@@ -37,7 +46,7 @@ class Movie extends Component {
 					<div className="movieContent">
 						<ul>
 							{
-								currentMovie.map((item, index) => {
+								movie.map((item, index) => {
 									return (
 										<li key={item.id}>
 											<img src={item.images.large} alt="" />
