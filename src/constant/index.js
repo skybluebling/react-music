@@ -7,3 +7,6 @@
 export const API_PROXY = 'https://bird.ioliu.cn/v1/?url='
 
 export const GET_TOP = 'GET_TOP';
+
+// music
+export const GET_MUSIC_LIST = 'GET_MUSIC_LIST';

@@ -12,7 +12,17 @@ const instance = axios.create({
   baseURL: `${config.baseUrl}`
 });
 
+const music = axios.create({
+  baseURL: `${config.musicUrl}`
+});
+
 export function top250(playload) {
-	let start = JSON.stringify(playload)
-	return instance.get(`/v2/movie/top250?start=${start}`)
+	if (!playload.count) {
+		playload.count = 10
+	}
+	return instance.get(`/v2/movie/top250?start=${playload.start}&count=${playload.count}`)
+}
+
+export function getMusic(playload) {
+	return music.get(`/api/playlist/detail?id=${playload.id}`)
 }

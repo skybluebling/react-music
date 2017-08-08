@@ -18,7 +18,7 @@
 	flex-direction: column;
 }
 .movie .movieCenter ul.navBar {
-	height: 0.9rem;
+	height: 0.92rem;
 	background-color: #2196f3;
 	line-height: 0.9rem;
 	border-top: 0.02rem solid #fff;
@@ -30,10 +30,20 @@
 	text-align: center;
 	color: rgba(255, 255, 255, 0.54)
 }
+.movie .movieCenter ul.navBar li.on {
+	border-bottom: 0.02rem solid red;
+}
 .movie .movieCenter .movieContent {
 	flex: 1;
 	overflow: auto;
 	padding-bottom: 0.7rem;
+}
+.movie .movieCenter .movieContent div.loadingBox {
+	padding-top: 0.3rem;
+	text-align: center;
+}
+.movie .movieCenter .movieContent img {
+	width: 1.2rem;
 }
 .movie .movieCenter .movieContent ul li {
 	height: 1.6rem;

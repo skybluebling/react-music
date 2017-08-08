@@ -18,8 +18,9 @@ export function top250(state = initialMovie, action) {
 			} else {
 				movieList = action.data
 			}
+			console.log(movieList)
 			return Object.assign({}, state, {
-				movie: movieList
+				movie: movieList || []
 			})
 		default: return state
 	}

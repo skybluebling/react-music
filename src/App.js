@@ -8,6 +8,7 @@ import './App.css';
 import Movie from './components/Movie'
 import Music from './components/Music'
 import Photo from './components/Photo'
+import MusicList from './components/MusicList'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route exact={true} path={`/`} component={Movie} ></Route>
             <Route exact={true} path={`/movie`} component={Movie} ></Route>
             <Route exact={true} path={`/music`} component={Music} ></Route>
+            <Route exact={true} path={`/musiclist`} component={MusicList} ></Route>
             <Route exact={true} path={`/photo`} component={Photo} ></Route>
           </Switch>
         </Router>

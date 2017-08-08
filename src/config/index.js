@@ -7,7 +7,8 @@
 import {API_PROXY} from '../constant'
 const config = {
 	development: {
-		baseUrl: API_PROXY+'https://api.douban.com'
+		baseUrl: API_PROXY+'https://api.douban.com',
+		musicUrl: API_PROXY+'http://music.163.com'
 	}
 }
 
